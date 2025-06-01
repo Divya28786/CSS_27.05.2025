@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css assessment 6</title>
+  <style>
+    body{
+      font-family: sans-serif;
+      margin: 40px;
+    }
+    .side-menu{
+      width: 200px;
+      border: 1px solid #000;
+    }
+    .side-menu .top-link{
+      background: orange;
+      color: white;
+      padding: 10px;
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .side-menu .link-group{
+      background: #add8e6;
+      padding: 10px 0;
+    }
+    .link-group a{
+      display: block;
+      padding: 8px 16px;
+      color: blue;
+      text-decoration: none;
+    }
+    .top-bar{
+      margin-top: 25px;
+      border: 1px solid #000;
+      display: inline-block;
+    }
+    .top-bar ul{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      background: #d3d3d3;
+    }
+    .top-bar li{
+      padding: 10px 20px;
+      border-left: 1px solid blue;
+    }
+    .top-bar li:first-child{
+      background: gray;
+      border: none;
+    }
+    .top-bar a{
+      text-decoration: none;
+      color: blue;
+    }
+    .top-bar li:first-child a{
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h3>Vertical Navigation Bar</h3>
+  <div class="side-menu">
+    <a href="#" class="top-link">Home</a>
+    <div class="link-group">
+      <a href="#">Java</a>
+      <a href="#">CSS</a>
+      <a href="#">HTML</a>
+      <a href="#">Bootstrap</a>
+    </div>
+  </div>
+  <h3>Horizontal Navigation Bar</h3>
+  <div class="top-bar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Java</a></li>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+    </ul>
+  </div>
+</body>
+</html>
